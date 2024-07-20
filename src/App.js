@@ -173,7 +173,7 @@ const App = () => {
                 })
               }
             </div>
-            <span className={`text-center my-2 text-2xl font-semibold ${turn.length > 0 ? "block" : "hidden"}`}>{turn}</span>
+            <span className={`text-center my-2 text-2xl font-semibold text-purple-600 ${turn.length > 0 ? "block" : "hidden"}`}>{turn}</span>
             <span className={`text-center my-2 text-2xl font-semibold ${winner.length > 0 ? "block" : "hidden"}`}>{winner}</span>
             <button className={`bg-black text-white px-2 py-1 rounded-md m-auto w-[120px] ${winner.length > 0 && turn.length === 0 ? "block" : "hidden"}`} onClick={restart}>Restart Game</button>
           </div>
